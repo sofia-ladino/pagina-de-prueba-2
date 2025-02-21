@@ -10,7 +10,7 @@ client = MongoClient("mongodb://localhost:27017/")
 db = client["imagenes_db"]  # Base de datos
 fs = gridfs.GridFS(db)  # GridFS para almacenar archivos
 
-# Ruta para subir imágenes
+# Ruta para subir imágenes aaaaaaaa
 @app.route('/upload', methods=['POST'])
 def upload():
     if 'image' not in request.files:
